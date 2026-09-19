@@ -42,6 +42,17 @@ export const metadata: Metadata = {
     "eggless healthy cupcakes",
     "granola bars Hyderabad"
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "HealthyMakes — Wholesome Home Bakery Hyderabad",
     description: "Goodness, baked naturally. Freshly baked in small batches in Hyderabad.",

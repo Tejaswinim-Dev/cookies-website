@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <radialGradient id="cookieGrad" cx="36%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#F3CA8C"/>
+      <stop offset="50%" stop-color="#D99B56"/>
+      <stop offset="85%" stop-color="#B87635"/>
+      <stop offset="100%" stop-color="#915622"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3D2314" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Golden Baked Artisan Cookie Base -->
+  <circle cx="32" cy="32" r="28" fill="url(#cookieGrad)" filter="url(#softShadow)"/>
+  
+  <!-- Subtle Texture & Cookie Crinkles -->
+  <path d="M16 28 C20 26, 24 30, 28 27" stroke="#A26226" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M34 38 C38 41, 44 37, 48 40" stroke="#A26226" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M22 42 C26 44, 30 42, 34 45" stroke="#8E4E18" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Dark Chocolate Chips -->
+  <!-- Chip 1: Top Right -->
+  <path d="M38 18 C42 16, 46 19, 44 24 C42 27, 37 25, 36 21 C35 19, 37 18, 38 18 Z" fill="#361B0D"/>
+  <circle cx="39" cy="20" r="1" fill="#6B3A1C"/>
+
+  <!-- Chip 2: Center -->
+  <path d="M26 27 C30 25, 33 28, 32 32 C31 35, 26 36, 24 32 C23 29, 24 27, 26 27 Z" fill="#2E160A"/>
+  <circle cx="27" cy="29" r="1.2" fill="#5F3318"/>
+
+  <!-- Chip 3: Bottom Left -->
+  <path d="M18 36 C21 34, 24 37, 23 40 C22 43, 17 43, 16 40 C15 38, 17 36, 18 36 Z" fill="#361B0D"/>
+  <circle cx="19" cy="38" r="0.9" fill="#6B3A1C"/>
+
+  <!-- Chip 4: Right -->
+  <path d="M44 32 C48 31, 50 35, 48 38 C46 41, 42 39, 42 36 C42 34, 43 32, 44 32 Z" fill="#31180B"/>
+  <circle cx="45" cy="34" r="1" fill="#64351A"/>
+
+  <!-- Chip 5: Top Left mini -->
+  <circle cx="22" cy="20" r="2.8" fill="#3D2010"/>
+  <circle cx="21.5" cy="19.5" r="0.8" fill="#6B3A1C"/>
+
+  <!-- Wholesome Green Sprout / Sage Leaf Accent (HealthyMakes signature) -->
+  <path d="M42 12 C47 8, 54 10, 52 17 C48 18, 43 17, 42 12 Z" fill="#66745A"/>
+  <path d="M44 14 Q48 13 50 12" stroke="#EDE7DA" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+</svg>
