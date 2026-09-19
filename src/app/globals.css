@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cream-bg: #F8F5EE;
+    --soft-beige: #EDE7DA;
+    --sage-green: #66745A;
+    --deep-olive: #3F4A36;
+    --charcoal-text: #24241F;
+    --muted-terracotta: #C98F72;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+    background-color: #F8F5EE;
+    color: #24241F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #66745A;
+    color: #F8F5EE;
+  }
+}
+
+/* Universal Scrollbar Removal - Seamless Ultra-Smooth Scrolling */
+* {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+/* Lenis Ultra-Smooth Scrolling Engine Rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Typography helper classes */
+.font-serif-editorial {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+.font-handwriting-warm {
+  font-family: var(--font-caveat), 'Caveat', cursive;
+}
+
+/* Subtle organic card border */
+.border-subtle {
+  border-color: rgba(36, 36, 31, 0.08);
+}
+
+/* Glassmorphism for header */
+.glass-header {
+  background: rgba(248, 245, 238, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Image reveal mask animation helper */
+.image-reveal {
+  overflow: hidden;
+}
+.image-reveal img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.image-reveal:hover img {
+  transform: scale(1.04);
+}
+
+/* Badge pulse animation */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+.animate-cart-bump {
+  animation: soft-pulse 0.35s ease-in-out;
+}
+
+/* Hero Carousel 2.5s progress bar animation */
+@keyframes hero-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.animate-hero-progress {
+  animation: hero-progress 2.5s linear forwards;
+}
